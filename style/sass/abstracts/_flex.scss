@@ -1,0 +1,44 @@
+// BOOSTERS TEAM
+//=========================================================
+//--------------------FLEX---------------------------------
+//=========================================================
+.flex {
+    display: flex;
+}
+
+//=== Flex directions
+.flex-direction-row {
+    flex-direction: row;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+//--flex-wrap
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+    ;
+}
+
+//---justify content
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+//---align-items
+.align-items-center {
+    align-items: center;
+}

@@ -1,0 +1,40 @@
+// BOOSTERS TEAM
+.why-choose-us {
+    padding: $padding-sm*5 $padding-sm*7 0 $padding-sm*7;
+    .section-header {
+        margin-bottom: 7*$margin-sm;
+        .intro-heading {
+            @extend .uppercase;
+            font-weight: $bold-weight;
+            font-size: $text-md;
+            color: $main-text-color;
+        }
+        .light-heading {
+            @extend .intro-heading;
+            font-weight: $light-weight;
+        }
+    }
+    .card-wrapper {
+        @include flex-between-row;
+        @extend .flex-wrap;
+        .card-item {
+            @extend .box-border;
+            width: 24%;
+            padding: 0 $padding-sm;
+            margin-bottom: $margin-bottom-sm;
+            i {
+                @extend .text-align-center;
+                padding-left: 1.5*$padding-sm;
+                font-size: $text-xsm*5;
+                color: $big-icon-color;
+            }
+            h4 {
+                font: $text-size-sec $secondary-font;
+                color: $main-text-color;
+            }
+            span {
+                font: $text-size-sm $main-font;
+            }
+        }
+    }
+}

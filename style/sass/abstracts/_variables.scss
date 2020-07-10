@@ -1,0 +1,77 @@
+// BOOSTERS TEAM
+//=======================================//
+//----------------Colors-----------------//
+//=======================================//
+$white:white;
+$black:black;
+//--Text colors--
+$main-text-color:#024b6c;
+$secondary-text-color:#336f8a;
+$big-icon-color: #01addd;
+$icons-color:#638da0;
+$input-color:#336f8a;
+$register-color:rgb(2, 75, 108);
+//--Border-colors--
+$border-bottom-color:#d8e3e8;
+//--Background-colors--
+$register-bg:rgb(22, 160, 184);
+$common-bg:rgb(239, 245, 247);
+$secondary-bg-color:#e9490a;
+//=======================================//
+// -------------Sizing-------------------//
+//=======================================//
+//----Margin----
+$margin-sm:10px;
+$margin-bottom-sm:25px;
+$margin-md:$margin-bottom-sm*2;
+$margin-xl:4*$margin-bottom-sm;
+//----Padding---
+$padding-sm:10px;
+$padding-sm-plus:15px;
+$padding-md:25px;
+$padding-md-plus:3*$padding-sm-plus;
+$padding-xl:5*$padding-sm;
+//--Texts--
+$text-xsm:10px;
+$text-size-sm:14px;
+$text-size-sec:18px;
+$text-md:2.14*$text-size-sm;
+$text-xl:2.86*$text-size-sm;
+//--Border radius--
+$standart-radius:5px;
+//--Line-height--
+$line-h-min:10px;
+$line-h-sm:24px;
+$line-h-md: 28px;
+$line-h-big:3*$line-h-min;
+//--Borders--
+$border-sm:1px;
+$border-md:3px;
+$border-lg:5px;
+//--Heights---
+$logo-height:40px;
+//--Letter spacing
+$letter-space:0.35px;
+//--Max-Min-Width-Height
+$height-limit-unit:100px;
+$max-width-md: 1.8*$height-limit-unit;
+//=======================================//
+//-------------Positions----------------//
+//=======================================//
+$left-sm:15%;
+$bottom-md:50px;
+//=======================================//
+//-------------Borders----------------//
+//=======================================//
+$border-solid:solid;
+//=======================================//
+//-------------Transition----------------//
+//=======================================//
+$transition-pro:all;
+$transition-sec:0.3s;
+$transition-time:ease;
+//=======================================//
+//-------------Z-Index-------------------//
+//=======================================//
+$back-layer:1;
+$navigation-layer:10;

@@ -1,0 +1,53 @@
+// BOOSTERS TEAM
+//-----Position
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+//----Width
+.container-fluid {
+    width: 100%;
+}
+
+//----Text Align
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+//----Text-transform
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+//----Box sizing
+.box-border {
+    box-sizing: border-box;
+}
+
+//---Border-style
+.border-solid {
+    border-style: solid;
+}
+
+//--Background-image
+.outline-none {
+    &:focus {
+        outline: none;
+    }
+}

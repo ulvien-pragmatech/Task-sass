@@ -1,0 +1,124 @@
+// BOOSTERS TEAM
+#appointment {
+    @extend .relative;
+    font-family: $main-font;
+    .bg-image {
+        @include contain-norepeat;
+        background-image: url(../../..//assets/portf_header.jpg);
+    }
+    .appointment-info-wrapper {
+        @extend .relative;
+        padding: 3*$padding-sm;
+        .intro {
+            @extend .relative;
+            @include flex-between-column;
+            font-family: $main-font;
+            width: 4*$height-limit-unit;
+            margin-top: $margin-xl;
+            padding-bottom: 4*$padding-sm;
+            left: $left-sm;
+            .intro-heading,
+            .light-heading {
+                @extend .uppercase;
+                @include fonter($text-xl, $main-font, $bold-weight, $main-text-color);
+            }
+            .intro-definition {
+                color: $main-text-color;
+            }
+            .our-services {
+                @extend .capitalize;
+                @include transition($transition-pro, $transition-sec, $transition-time);
+                @include fonter($text-size-sm, $main-font, $bold-weight, $white);
+                @include border($border-sm, $border-solid, $white);
+                padding: $padding-sm 2*$padding-sm;
+                background-color: $secondary-bg-color;
+                max-width: $max-width-md;
+                &:hover {
+                    @include border($border-sm, $border-solid, $black);
+                    @include color-background($black, $white);
+                }
+            }
+        }
+        .booking-info {
+            @include flex-between-row;
+            @include color-background($secondary-text-color, $register-bg);
+            border-radius: $border-lg;
+            margin-left: 4*$margin-bottom-sm;
+            .booking {
+                @include border($border-sm, $border-solid, $white);
+                padding: $padding-md-plus;
+                .booking-text {
+                    @include register-heading;
+                }
+                .first-line-inputs,
+                .second-line-inputs {
+                    @include flex-between-row;
+                    margin-bottom: $margin-bottom-sm;
+                    input {
+                        @extend .outline-none;
+                        @include border($border-sm, $border-solid, $common-bg);
+                        color: $register-color;
+                        padding: $padding-sm-plus $padding-md;
+                        border-radius: $border-lg;
+                        width: 40%;
+                        &::placeholder {
+                            @include fonter($text-size-sm, $main-font, $bold-weight, $input-color);
+                        }
+                    }
+                }
+            }
+            textarea {
+                @extend .box-border;
+                @extend .outline-none;
+                @extend .container-fluid;
+                @include border($border-sm, $border-solid, $common-bg);
+                @include fonter($text-size-sm, $main-font, $bold-weight, $register-color);
+                max-width: 100%;
+                min-height: 2*$height-limit-unit;
+                max-height: 6*$height-limit-unit;
+                border-radius: $border-lg;
+                margin-bottom: $margin-bottom-sm;
+                padding: $padding-sm-plus $padding-md;
+            }
+            .send-message {
+                @include main-button-type;
+                @include border($border-sm, $border-solid, $secondary-bg-color);
+                margin-bottom: $margin-bottom-sm;
+            }
+        }
+        .contact-us {
+            @extend .relative;
+            color: $white;
+            padding: $padding-md-plus;
+            line-height: $line-h-md;
+            .contact-text {
+                @include register-heading;
+            }
+            .address-header {
+                font-size: 1.33*$text-size-sec;
+                margin-bottom: $margin-bottom-sm;
+            }
+            .address-info {
+                margin-bottom: $margin-bottom-sm;
+                font-size: $text-size-sm;
+                line-height: $line-h-sm;
+                letter-spacing: $letter-space;
+                &.street {
+                    margin-bottom: $margin-md;
+                }
+            }
+            .call-direct {
+                @extend .absolute;
+                bottom: $bottom-md;
+                span {
+                    @include fonter ($text-size-sm, $main-font, $bold-weight, $white);
+                    margin-bottom: $margin-bottom-sm;
+                }
+            }
+            .call-number {
+                @include fonter ($text-size-sm, $main-font, $bold-weight, $white);
+                margin-top: $margin-md;
+            }
+        }
+    }
+}

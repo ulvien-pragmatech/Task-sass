@@ -1,0 +1,525 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/ HTML5 display-role reset for older browsers */
+body {
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.relative, #appointment, #appointment .appointment-info-wrapper, #appointment .appointment-info-wrapper .intro, #appointment .appointment-info-wrapper .contact-us {
+  position: relative;
+}
+
+.absolute, #appointment .appointment-info-wrapper .contact-us .call-direct {
+  position: absolute;
+}
+
+.fixed, .top-navbar {
+  position: fixed;
+}
+
+.container-fluid, #appointment .appointment-info-wrapper .booking-info textarea {
+  width: 100%;
+}
+
+.text-align-center, .why-choose-us .card-wrapper .card-item i {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.uppercase, #appointment .appointment-info-wrapper .intro .intro-heading,
+#appointment .appointment-info-wrapper .intro .light-heading, #appointment .appointment-info-wrapper .booking-info .booking .booking-text, #appointment .appointment-info-wrapper .contact-us .contact-text, .why-choose-us .section-header .intro-heading, .why-choose-us .section-header .light-heading {
+  text-transform: uppercase;
+}
+
+.capitalize, #appointment .appointment-info-wrapper .intro .our-services {
+  text-transform: capitalize;
+}
+
+.box-border, #appointment .appointment-info-wrapper .booking-info textarea, .why-choose-us .card-wrapper .card-item {
+  box-sizing: border-box;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.outline-none:focus, #appointment .appointment-info-wrapper .booking-info .booking .first-line-inputs input:focus,
+#appointment .appointment-info-wrapper .booking-info .booking .second-line-inputs input:focus, #appointment .appointment-info-wrapper .booking-info textarea:focus {
+  outline: none;
+}
+
+.col-1 {
+  width: 8.33333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.flex, #header .top-info .top-wrapper, .top-navbar, .top-navbar .navbar .navbar-wrapper, #appointment .appointment-info-wrapper .intro, #appointment .appointment-info-wrapper .booking-info, #appointment .appointment-info-wrapper .booking-info .booking .first-line-inputs,
+#appointment .appointment-info-wrapper .booking-info .booking .second-line-inputs, .why-choose-us .card-wrapper {
+  display: flex;
+}
+
+.flex-direction-row, #header .top-info .top-wrapper, .top-navbar, .top-navbar .navbar .navbar-wrapper, #appointment .appointment-info-wrapper .booking-info, #appointment .appointment-info-wrapper .booking-info .booking .first-line-inputs,
+#appointment .appointment-info-wrapper .booking-info .booking .second-line-inputs, .why-choose-us .card-wrapper {
+  flex-direction: row;
+}
+
+.flex-direction-column, #appointment .appointment-info-wrapper .intro {
+  flex-direction: column;
+}
+
+.flex-wrap, .why-choose-us .card-wrapper {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.justify-content-space-between, #header .top-info .top-wrapper, .top-navbar, .top-navbar .navbar .navbar-wrapper, #appointment .appointment-info-wrapper .intro, #appointment .appointment-info-wrapper .booking-info, #appointment .appointment-info-wrapper .booking-info .booking .first-line-inputs,
+#appointment .appointment-info-wrapper .booking-info .booking .second-line-inputs, .why-choose-us .card-wrapper {
+  justify-content: space-between;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center, .top-navbar {
+  align-items: center;
+}
+
+#header {
+  padding: 0 50px;
+}
+
+#header .top-info .top-wrapper {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d8e3e8;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+}
+
+#header .top-info .top-wrapper .contact-info {
+  color: #024b6c;
+}
+
+#header .top-info .top-wrapper .contact-info .email i {
+  margin-right: 10px;
+}
+
+#header .top-info .top-wrapper .contact-info .telephone {
+  margin-left: 50px;
+}
+
+#header .top-info .top-wrapper .contact-info .telephone i {
+  margin-right: 10px;
+}
+
+#header .top-info .top-wrapper .iconics a {
+  color: #638da0;
+  margin-left: 20px;
+}
+
+#header .top-info .top-wrapper .iconics a:hover {
+  color: #024b6c;
+}
+
+.top-navbar {
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.top-navbar .logo-wrapper {
+  height: 100%;
+}
+
+.top-navbar .logo-wrapper img {
+  max-height: 40px;
+}
+
+.top-navbar .navbar .navbar-wrapper .nav-item {
+  padding: 0 20px;
+}
+
+.top-navbar .navbar .navbar-wrapper .nav-item a {
+  font: 14px "Poppins", sans-serif;
+  font-weight: 600;
+  color: #024b6c;
+}
+
+.top-navbar .book-appointment a button {
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  font: 14px "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  color: white;
+  background-color: #e9490a;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  padding: 10px 20px;
+  margin-left: 80px;
+}
+
+.top-navbar .book-appointment a button:hover {
+  color: black;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#appointment {
+  font-family: "Poppins", sans-serif;
+}
+
+#appointment .bg-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../..//assets/portf_header.jpg);
+}
+
+#appointment .appointment-info-wrapper {
+  padding: 30px;
+}
+
+#appointment .appointment-info-wrapper .intro {
+  font-family: "Poppins", sans-serif;
+  width: 400px;
+  margin-top: 100px;
+  padding-bottom: 40px;
+  left: 15%;
+}
+
+#appointment .appointment-info-wrapper .intro .intro-heading, #appointment .appointment-info-wrapper .intro .why-choose-us .section-header .light-heading, .why-choose-us .section-header #appointment .appointment-info-wrapper .intro .light-heading,
+#appointment .appointment-info-wrapper .intro .light-heading {
+  font: 40.04px "Poppins", sans-serif;
+  font-weight: 600;
+  color: #024b6c;
+}
+
+#appointment .appointment-info-wrapper .intro .intro-definition {
+  color: #024b6c;
+}
+
+#appointment .appointment-info-wrapper .intro .our-services {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  font: 14px "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  padding: 10px 20px;
+  background-color: #e9490a;
+  max-width: 180px;
+}
+
+#appointment .appointment-info-wrapper .intro .our-services:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  color: black;
+  background-color: white;
+}
+
+#appointment .appointment-info-wrapper .booking-info {
+  color: #336f8a;
+  background-color: #16a0b8;
+  border-radius: 5px;
+  margin-left: 100px;
+}
+
+#appointment .appointment-info-wrapper .booking-info .booking {
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  padding: 45px;
+}
+
+#appointment .appointment-info-wrapper .booking-info .booking .booking-text {
+  font: 14px "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 55px;
+  line-height: 30px;
+  letter-spacing: 0.35px;
+}
+
+#appointment .appointment-info-wrapper .booking-info .booking .first-line-inputs,
+#appointment .appointment-info-wrapper .booking-info .booking .second-line-inputs {
+  margin-bottom: 25px;
+}
+
+#appointment .appointment-info-wrapper .booking-info .booking .first-line-inputs input,
+#appointment .appointment-info-wrapper .booking-info .booking .second-line-inputs input {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eff5f7;
+  color: #024b6c;
+  padding: 15px 25px;
+  border-radius: 5px;
+  width: 40%;
+}
+
+#appointment .appointment-info-wrapper .booking-info .booking .first-line-inputs input::placeholder,
+#appointment .appointment-info-wrapper .booking-info .booking .second-line-inputs input::placeholder {
+  font: 14px "Poppins", sans-serif;
+  font-weight: 600;
+  color: #336f8a;
+}
+
+#appointment .appointment-info-wrapper .booking-info textarea {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eff5f7;
+  font: 14px "Poppins", sans-serif;
+  font-weight: 600;
+  color: #024b6c;
+  max-width: 100%;
+  min-height: 200px;
+  max-height: 600px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  padding: 15px 25px;
+}
+
+#appointment .appointment-info-wrapper .booking-info .send-message {
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  font: 14px "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  color: white;
+  background-color: #e9490a;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  padding: 10px 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e9490a;
+  margin-bottom: 25px;
+}
+
+#appointment .appointment-info-wrapper .booking-info .send-message:hover {
+  color: black;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#appointment .appointment-info-wrapper .contact-us {
+  color: white;
+  padding: 45px;
+  line-height: 28px;
+}
+
+#appointment .appointment-info-wrapper .contact-us .contact-text {
+  font: 14px "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 55px;
+  line-height: 30px;
+  letter-spacing: 0.35px;
+}
+
+#appointment .appointment-info-wrapper .contact-us .address-header {
+  font-size: 23.94px;
+  margin-bottom: 25px;
+}
+
+#appointment .appointment-info-wrapper .contact-us .address-info {
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+}
+
+#appointment .appointment-info-wrapper .contact-us .address-info.street {
+  margin-bottom: 50px;
+}
+
+#appointment .appointment-info-wrapper .contact-us .call-direct {
+  bottom: 50px;
+}
+
+#appointment .appointment-info-wrapper .contact-us .call-direct span {
+  font: 14px "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 25px;
+}
+
+#appointment .appointment-info-wrapper .contact-us .call-number {
+  font: 14px "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-top: 50px;
+}
+
+.why-choose-us {
+  padding: 50px 70px 0 70px;
+}
+
+.why-choose-us .section-header {
+  margin-bottom: 70px;
+}
+
+.why-choose-us .section-header .intro-heading, .why-choose-us .section-header .light-heading {
+  font-weight: 600;
+  font-size: 29.96px;
+  color: #024b6c;
+}
+
+.why-choose-us .section-header .light-heading {
+  font-weight: 400;
+}
+
+.why-choose-us .card-wrapper .card-item {
+  width: 24%;
+  padding: 0 10px;
+  margin-bottom: 25px;
+}
+
+.why-choose-us .card-wrapper .card-item i {
+  padding-left: 15px;
+  font-size: 50px;
+  color: #01addd;
+}
+
+.why-choose-us .card-wrapper .card-item h4 {
+  font: 18px "Cabin", sans-serif;
+  color: #024b6c;
+}
+
+.why-choose-us .card-wrapper .card-item span {
+  font: 14px "Poppins", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

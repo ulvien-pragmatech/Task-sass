@@ -1,0 +1,63 @@
+// BOOSTERS TEAM
+//--Flex
+@mixin flex-beetween {
+    @extend .flex;
+    @extend .justify-content-space-between;
+}
+
+@mixin flex-between-column {
+    @include flex-beetween;
+    @extend .flex-direction-column;
+}
+
+@mixin flex-between-row {
+    @include flex-beetween;
+    @extend .flex-direction-row;
+}
+
+//---Fonts
+@mixin fonter ($size, $font-f, $weight, $color) {
+    font: $size $font-f;
+    font-weight: $weight;
+    color: $color;
+}
+
+//---Register
+@mixin register-heading {
+    @include fonter($text-size-sm, $main-font, $bold-weight, $white);
+    @extend .uppercase;
+    margin-bottom: 5.5*$margin-sm;
+    line-height: $line-h-big;
+    letter-spacing: $letter-space;
+}
+
+//---Color Background
+@mixin color-background($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+}
+
+//---Border
+@mixin border($pixel, $style, $color) {
+    border-width: $pixel;
+    border-style: $style;
+    border-color: $color;
+}
+
+//---Transition
+@mixin transition($pro, $sec, $time) {
+    transition-property: $pro;
+    transition-duration: $sec;
+    transition-timing-function: $time;
+}
+
+//---Image
+@mixin contain-norepeat {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+//---Padding
+@mixin padding-section {
+    padding: 0 5*$padding-sm;
+}

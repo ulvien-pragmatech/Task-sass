@@ -1,0 +1,12 @@
+// BOOSTERS TEAM
+@mixin main-button-type {
+    @include border($border-sm, $border-solid, $white);
+    @include fonter ($text-size-sm, $main-font, $bold-weight, $white);
+    @include color-background( $white, $secondary-bg-color);
+    @include transition($transition-pro, $transition-sec, $transition-time);
+    padding: $padding-sm 2*$padding-sm;
+    &:hover {
+        @include color-background( $black, $white);
+        @include border($border-sm, $border-solid, $black);
+    }
+}

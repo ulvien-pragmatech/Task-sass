@@ -1,0 +1,69 @@
+// BOOSTERS TEAM
+#header {
+    @include padding-section;
+    .top-info {
+        .top-wrapper {
+            @include flex-between-row;
+            @include border($border-sm, $border-solid, $border-bottom-color);
+            font-size: $text-size-sm;
+            font-family: $main-font;
+            line-height: $line-h-big;
+            .contact-info {
+                color: $main-text-color;
+                .email {
+                    i {
+                        margin-right: $margin-sm;
+                    }
+                }
+                .telephone {
+                    margin-left: $margin-sm*5;
+                    i {
+                        margin-right: $margin-sm;
+                    }
+                }
+            }
+            .iconics {
+                a {
+                    color: $icons-color;
+                    margin-left: $margin-sm*2;
+                    &:hover {
+                        color: $main-text-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.top-navbar {
+    @include flex-between-row;
+    @extend .align-items-center;
+    @extend .fixed;
+    padding: $padding-sm 0;
+    z-index: $navigation-layer;
+    .logo-wrapper {
+        height: 100%;
+        img {
+            max-height: $logo-height;
+        }
+    }
+    .navbar {
+        .navbar-wrapper {
+            @include flex-between-row;
+            .nav-item {
+                padding: 0 2*$padding-sm;
+                a {
+                    @include fonter ($text-size-sm, $main-font, $bold-weight, $main-text-color);
+                }
+            }
+        }
+    }
+    .book-appointment {
+        a {
+            button {
+                @include main-button-type;
+                margin-left: 8*$margin-sm;
+            }
+        }
+    }
+}
